@@ -3,6 +3,7 @@ package org.game.java;
 /**
  * Created by andrzejdubaj on 07.03.2017.
  */
+
 import java.awt.*;
 import java.awt.image.BufferStrategy;
 import java.util.Random;
@@ -25,7 +26,7 @@ public class Game extends Canvas implements Runnable {
         new Window(WIDTH, HEIGHT, "Some random Game!", this);
         r = new Random();
 
-        handler.addObject(new Player(WIDTH/2-32, HEIGHT/2-32, ID.Player));
+        handler.addObject(new Player(WIDTH / 2 - 32, HEIGHT / 2 - 32, ID.Player));
 
     }
 
@@ -36,11 +37,11 @@ public class Game extends Canvas implements Runnable {
     }
 
     public synchronized void stop() {
-        try{
+        try {
             thread.join();
             running = false;
 
-        }catch(Exception e) {
+        } catch (Exception e) {
             e.printStackTrace();
         }
     }
@@ -52,19 +53,19 @@ public class Game extends Canvas implements Runnable {
         double delta = 0;
         long timer = System.currentTimeMillis();
         int frames = 0;
-        while(running) {
+        while (running) {
             long now = System.nanoTime();
             delta += (now - lastTime) / ns;
             lastTime = now;
-            while(delta >= 1) {
+            while (delta >= 1) {
                 tick();
                 delta--;
             }
-            if(running)
+            if (running)
                 render();
-            frames ++;
+            frames++;
 
-            if(System.currentTimeMillis() - timer > 1000) {
+            if (System.currentTimeMillis() - timer > 1000) {
                 timer += 1000;
                 System.out.println("FPS: " + frames);
                 frames = 0;
@@ -79,14 +80,14 @@ public class Game extends Canvas implements Runnable {
 
     private void render() {
         BufferStrategy bs = this.getBufferStrategy();
-        if(bs == null) {
+        if (bs == null) {
             this.createBufferStrategy(3);
             return;
         }
 
         Graphics g = bs.getDrawGraphics();
         g.setColor(Color.BLACK);
-        g.fillRect(0,0, WIDTH,HEIGHT);
+        g.fillRect(0, 0, WIDTH, HEIGHT);
 
         handler.render(g);
 

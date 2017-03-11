@@ -19,6 +19,7 @@ public abstract class GameObject {
     }
 
     public abstract void tick();
+
     public abstract void render(Graphics g);
 
     public void setX(int x) {
@@ -49,10 +50,9 @@ public abstract class GameObject {
         return velX;
     }
 
-    public int getVelY(){
+    public int getVelY() {
         return velY;
     }
-
 
 
 }

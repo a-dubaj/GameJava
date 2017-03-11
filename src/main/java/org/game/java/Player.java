@@ -12,8 +12,7 @@ public class Player extends GameObject {
 
     public Player(int x, int y, ID id) {
         super(x, y, id);
-        velY = r.nextInt(5) + 1;
-        velX = r.nextInt(5);
+
     }
 
     public void tick() {
