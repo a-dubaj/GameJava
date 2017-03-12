@@ -5,5 +5,6 @@ package org.game.java;
  */
 public enum ID {
     Player(),
+    Player2(),
     Enemy();
 }

@@ -23,11 +23,13 @@ public class Game extends Canvas implements Runnable {
 
     public Game() {
         handler = new Handler();
+        this.addKeyListener(new KeyInput(handler));
+
         new Window(WIDTH, HEIGHT, "Some random Game!", this);
         r = new Random();
 
         handler.addObject(new Player(WIDTH / 2 - 32, HEIGHT / 2 - 32, ID.Player));
-
+        handler.addObject(new Player(WIDTH / 2 + 64, HEIGHT / 2 - 32, ID.Player2));
     }
 
     public synchronized void start() {
