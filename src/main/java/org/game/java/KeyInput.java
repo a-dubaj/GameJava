@@ -27,7 +27,8 @@ public class KeyInput extends KeyAdapter {
         for (int i = 0; i < handler.object.size(); i++) {
             GameObject tempObject = handler.object.get(i);
             if (tempObject.getID() == ID.Player) {
-                //key events for Player1
+                //key events for Player
+
                 if (key == KeyEvent.VK_UP) {
                     tempObject.setVelY((-5));
                     keyDown[0] = true;
