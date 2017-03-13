@@ -10,8 +10,6 @@ public class HUD {
     public static int HEALTH = 100;
 
     public void tick() {
-        HEALTH --;
-
         HEALTH = Game.clamp(HEALTH, 0, 100);
     }
 
@@ -23,5 +21,4 @@ public class HUD {
         g.setColor(Color.WHITE);
         g.drawRect(15, 15, 200, 32);
     }
-
 }
