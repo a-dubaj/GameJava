@@ -6,5 +6,6 @@ package org.game.java;
 public enum ID {
     Player(),
     BasicEnemy(),
+    FastEnemy(),
     Trail();
 }
