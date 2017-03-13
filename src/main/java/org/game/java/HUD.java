@@ -17,7 +17,7 @@ public class HUD {
         g.setColor(Color.GRAY);
         g.fillRect(15, 15, 200, 32);
         g.setColor(Color.GREEN);
-        g.fillRect(15, 15, HEALTH = 2, 32);
+        g.fillRect(15, 15, HEALTH * 2, 32);
         g.setColor(Color.WHITE);
         g.drawRect(15, 15, 200, 32);
     }
