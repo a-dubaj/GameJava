@@ -35,6 +35,9 @@ public class EnemyBoss extends GameObject {
         x += velX;
         y += velY;
 
+        if(timer <= 0) velY = 0;
+        else timer--;
+
         if (timer <= 0) timer2--;
         if (timer2 <= 0)
         {
