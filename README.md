@@ -13,5 +13,7 @@
 
 
 
-[![Demo Game play](https://www.youtube.com/embed/zOBioOvw350)](https://youtu.be/zOBioOvw350)
+[![Demo Game play](https://img.youtube.com/vi/zOBioOvw350/0.jpg)](https://www.youtube.com/watch?v=zOBioOvw350)
+
+
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
