@@ -6,7 +6,7 @@
 
 ### Video Game Play: 
 
-[![Demo Game play](https://img.youtube.com/vi/zOBioOvw350/0.jpg)](https://www.youtube.com/watch?v=zOBioOvw350)
+[![Demo Game play](https://img.youtube.com/vi/zOBioOvw350/maxresdefault.jpg)](https://www.youtube.com/watch?v=zOBioOvw350)
 
 
 ### Few screen shots:
